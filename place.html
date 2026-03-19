@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florianópolis, Brazil</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Florianópolis, Brazil</h1>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 599px)" srcset="images/florianopolis-small.webp" type="image/webp">
+        <source media="(min-width: 600px)" srcset="images/florianopolis-large.webp" type="image/webp">
+        <img src="images/florianopolis-large.webp" alt="Florianópolis beach with turquoise water">
+      </picture>
+    </section>
+
+    <section class="data">
+      <h2>Data</h2>
+      <dl>
+        <dt>Area:</dt>
+        <dd>674.3 sq km</dd>
+
+        <dt>Population:</dt>
+        <dd>492,691</dd>
+
+        <dt>Capital of:</dt>
+        <dd>Santa Catarina State</dd>
+
+        <dt>Languages:</dt>
+        <dd>Portuguese</dd>
+
+        <dt>Currency:</dt>
+        <dd>Brazilian Real (R$)</dd>
+
+        <dt>Time Zone:</dt>
+        <dd>BRT (UTC−3)</dd>
+
+        <dt>Calling Code:</dt>
+        <dd>+55 48</dd>
+
+        <dt>Main Industry:</dt>
+        <dd>Tourism</dd>
+      </dl>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <dl>
+        <dt>Temperature:</dt>
+        <dd><span id="temp-display">24</span> °C</dd>
+
+        <dt>Conditions:</dt>
+        <dd>Partly Cloudy</dd>
+
+        <dt>Wind:</dt>
+        <dd><span id="wind-display">12</span> km/h</dd>
+
+        <dt>Wind Chill:</dt>
+        <dd id="wind-chill-result">Calculating...</dd>
+      </dl>
+      <svg class="weather-icon-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="weather-icon-title">
+        <title id="weather-icon-title">Partly cloudy</title>
+        <circle cx="50" cy="35" r="20" fill="#FFD700" />
+        <path d="M 30 65 Q 30 75 40 75 L 60 75 Q 70 75 70 65" fill="#87CEEB" stroke="#87CEEB" stroke-width="2" />
+        <circle cx="35" cy="70" r="3" fill="#87CEEB" />
+        <circle cx="50" cy="72" r="3" fill="#87CEEB" />
+        <circle cx="65" cy="70" r="3" fill="#87CEEB" />
+      </svg>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="year"></span> Florianópolis, Brazil | Last Modified: <span id="lastmod"></span></p>
+  </footer>
+</body>
+
+</html>
