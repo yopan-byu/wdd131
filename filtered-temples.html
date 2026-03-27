@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album</title>
+  <meta name="description" content="A responsive filtered temple album page with dynamic temple cards.">
+  <meta name="author" content="Brother Leonidas Yopan">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Filtered Temple Album</h1>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <nav id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#old">Old</a>
+      <a href="#new">New</a>
+      <a href="#large">Large</a>
+      <a href="#small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Beautiful Temples Around the World</h2>
+    <div id="temples-container">
+      <div class="temple-card" data-dedicated="1993" data-area="98000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/a240f8560afb7e6cc22ac7060ced18a371908af8/full/1600%2C/0/default"
+          alt="Denver Colorado Temple">
+        <div class="temple-card-content">
+          <h3>Denver Colorado Temple</h3>
+          <p><strong>Location:</strong> Denver, Colorado, USA</p>
+          <p><strong>Dedicated:</strong> 1993</p>
+          <p><strong>Area:</strong> 98,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="1983" data-area="119600">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/b28597796300dda1724e1844db40d74790020bf0/full/1600%2C/0/default"
+          alt="Seattle Washington Temple">
+        <div class="temple-card-content">
+          <h3>Seattle Washington Temple</h3>
+          <p><strong>Location:</strong> Seattle, Washington, USA</p>
+          <p><strong>Dedicated:</strong> 1983</p>
+          <p><strong>Area:</strong> 119,600 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="2018" data-area="95000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/9130468c8099ce6d57d408945a4d94ebc97d969a/full/640%2C/0/default"
+          alt="Sydney Australia Temple">
+        <div class="temple-card-content">
+          <h3>Sydney Australia Temple</h3>
+          <p><strong>Location:</strong> Sydney, Australia</p>
+          <p><strong>Dedicated:</strong> 2018</p>
+          <p><strong>Area:</strong> 95,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="2010" data-area="107000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/42fe168daf1b11eeafb4eeeeac1e9006b9466aaa/full/640%2C/0/default"
+          alt="Frankfurt Germany Temple">
+        <div class="temple-card-content">
+          <h3>Frankfurt Germany Temple</h3>
+          <p><strong>Location:</strong> Frankfurt, Germany</p>
+          <p><strong>Dedicated:</strong> 2010</p>
+          <p><strong>Area:</strong> 107,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="2024" data-area="88000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/2dcaf6bdc04d42202ad48d580bcf9b0b15cf5550/full/640%2C/0/default"
+          alt="Orem Utah Temple">
+        <div class="temple-card-content">
+          <h3>Orem Utah Temple</h3>
+          <p><strong>Location:</strong> Orem, Utah, USA</p>
+          <p><strong>Dedicated:</strong> 2024</p>
+          <p><strong>Area:</strong> 88,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="1877" data-area="15000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/ff8c7df0c3ca5323549b8f87790ec42c0ce18662/full/1600%2C/0/default"
+          alt="St. George Utah Temple">
+        <div class="temple-card-content">
+          <h3>St. George Utah Temple</h3>
+          <p><strong>Location:</strong> St. George, Utah, USA</p>
+          <p><strong>Dedicated:</strong> 1877</p>
+          <p><strong>Area:</strong> 15,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="2020" data-area="78000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/4fe16c6695af18717e10827dbdbd56c3482cd8c1/full/1600%2C/0/default"
+          alt="São Paulo Brazil Temple">
+        <div class="temple-card-content">
+          <h3>São Paulo Brazil Temple</h3>
+          <p><strong>Location:</strong> São Paulo, Brazil</p>
+          <p><strong>Dedicated:</strong> 2020</p>
+          <p><strong>Area:</strong> 78,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="1836" data-area="6000">
+        <img src="https://churchofjesuschrist.org/imgs/9fd7c425073e02f874a22d233a6b1d17c9e5ea23/full/1600%2C/0/default"
+          alt="Kirtland Ohio Temple">
+        <div class="temple-card-content">
+          <h3>Kirtland Ohio Temple</h3>
+          <p><strong>Location:</strong> Kirtland, Ohio, USA</p>
+          <p><strong>Dedicated:</strong> 1836</p>
+          <p><strong>Area:</strong> 6,000 sq ft</p>
+        </div>
+      </div>
+
+      <div class="temple-card" data-dedicated="2023" data-area="85000">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/99f1e63f202511eeb116eeeeac1ef1e8603f51a8/full/640%2C/0/default"
+          alt="Hsinchu Taiwan Temple">
+        <div class="temple-card-content">
+          <h3>Hsinchu Taiwan Temple</h3>
+          <p><strong>Location:</strong> Hsinchu, Taiwan</p>
+          <p><strong>Dedicated:</strong> 2023</p>
+          <p><strong>Area:</strong> 85,000 sq ft</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> | Brother Leonidas Yopan | Filtered Temple Album
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
