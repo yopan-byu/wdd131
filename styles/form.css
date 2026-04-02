@@ -193,3 +193,42 @@ footer p {
   font-weight: 600;
   color: #3d5a80;
 }
+
+@media (max-width: 600px) {
+  .page-header h1 {
+    font-size: 1.45rem;
+  }
+
+  main {
+    padding: 1rem 0.75rem;
+  }
+
+  .form-panel,
+  .confirm-panel {
+    padding: 1.25rem 1rem 1.5rem;
+    border-radius: 6px;
+  }
+
+  .rating-row {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 1.0625rem;
+  }
+
+  .page-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .form-panel {
+    max-width: 36rem;
+    padding: 2rem 2rem 2.25rem;
+  }
+}
